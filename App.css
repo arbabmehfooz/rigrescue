@@ -1,0 +1,406 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Geist', sans-serif;
+}
+/* styles/globals.css or App.css */
+
+
+.bluePanel {
+  height: 100vh;
+  width: 40%;
+  /* background-color: #FFEEEE; */
+    background-color: whitesmoke;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.formPanel {
+  width: 60%;
+  height: 100vh;
+  background-color: #171F4D;
+  display: flex;
+  align-items: center;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+.headFont{
+  font-family: 'Geist', sans-serif;
+  color: #F55227 !important;
+  
+}
+.logo {
+  width: 300px;
+  height: auto;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form h2 {
+  margin-bottom: -3px;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.form input {
+  padding: 10px;
+  border: 1px solid #F55227;
+  border-radius: 3px;
+  font-size: 13px;
+  background-color: whitesmoke !important;
+  color: black;
+  outline: none;
+  width: 400px;
+}
+
+.form input:focus {
+  border: 1px solid #FF0000;
+  box-shadow: 0 0 5px #F55227; 
+}
+
+.form button:hover {
+  background-color: #f46138;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 11px;
+  margin-top: -10px;
+}
+
+.forgot a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.form button {
+  padding: 11px;
+  background-color: #F55227;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 270px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-left: 75px;
+  margin-top: 20px;
+
+}
+.passwordWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.passwordWrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.togglePassword {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #0077b6;
+  font-size: 14px;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Booking page */
+
+.bookingtable{
+  max-width: 100%;
+  margin-top: 0 !important;
+}
+.table {
+  width: 100%;
+  min-width: 600px;
+}
+
+.bookingTableFont {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+}
+
+td.descriptionCol {
+  white-space: normal;
+  word-break: break-word;
+  max-width: 250px;
+  vertical-align: middle;
+}
+td.descriptionCol {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.table td{
+  vertical-align: middle;
+}
+.buttonstyle{
+  font-size: larger;
+}
+.table th {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+
+/* Header CSS///////////// */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  gap: 50px;
+  background-color: #171F4D;
+  height: 124px;
+  box-shadow: 0 2px 8px -2px #FF0000;
+}
+
+.searchContainer {
+  position: relative;
+  width: 280px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #F55227;
+}
+
+.searchInput {
+  height: 40px;
+  padding-left: 45px; /* space for icon */
+  width: 100%;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.09);
+  border-radius: 8px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bellContainer {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.bellIcon {
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.backButton {
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+.backButton:hover {
+  opacity: 0.7;
+}
+
+.filterContainer img {
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.filterContainer img:hover {
+  opacity: 0.7;
+}
+
+.bellContainer:hover {
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Sidebar CSS///////////////////// */
+
+.sidebar {
+  background: #FFEEEE;
+  width: 100%;
+  max-width: 270px;
+  min-height: 100vh;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoContainer {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav li {
+  width: 100%;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #F55227;
+  text-decoration: none;
+  padding: 12px 20px;
+  transition: background 0.2s;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  
+}
+.bg-logout-color{
+  background-color: #F55227 !important;
+}
+.nav a:hover {
+  background: #FFEEEE;
+  border-radius: 4px;
+  
+}
+.nav-link.active {
+  background-color: #171F4D !important;
+  border-radius: 4px;
+}
+
+/* custom.css */
+.nav-link:hover {
+  color: black !important;
+}
+
+
+/* Button */
+
+.buttonstyle {
+  background-color: #171F4D !important;
+  border-color: #005B7E !important;
+  color: white !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-size: 12px !important;
+  padding: 6px 14px !important;
+  border-radius: 4px !important;
+}
+
+/* Logout Modal Buttons */
+
+.custom-no {
+  border: 1px solid #63d1f6;
+  color: #63d1f6;
+  background-color: transparent;
+  border-radius: 5px;
+
+}
+
+.custom-no:hover {
+  background-color: #63d1f6;
+  color: white;
+}
+
+.custom-yes {
+  background-color: transparent;
+  color: #63d1f6;
+  border: 1px solid #63d1f6;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.custom-yes:hover {
+  background-color: #63d1f6;
+  color: white;
+}
+
+.custom-no,
+.custom-yes {
+  padding: 8px 24px;
+}
+
+
+
+
+/* Solutions to the errors  */
+
+.nav-link:hover {
+  background: rgb(229, 229, 229);
+  border-radius: 4px;
+  color: black;
+}
+
+/* Prevent blue highlight on click */
+.nav-link:focus:not(.active),
+.nav-link:active:not(.active),
+.custom-logout-link:focus,
+.custom-logout-link:active {
+  color: #b40909 !important;
+  background: inherit !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.nav-link.active {
+  border-radius: 4px;
+  color: white !important;
+}
+
+/* eye icon */
+.togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #0077b6;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
